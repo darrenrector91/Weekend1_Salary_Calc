@@ -1,0 +1,42 @@
+body, html {
+  font-family: 'Pontano Sans', sans-serif;
+}
+
+header {
+  height: 100px;
+  width: auto;
+  background-color: silver;
+
+}
+
+#salaryTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#salaryTable td, #salaryTable th {
+  border: 2px solid #ddd;
+  padding: 8px;
+}
+
+#salaryTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* #salaryTable tr:hover {
+  background-color: #ddd;
+} */
+
+#salaryTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #33ACFF;
+  color: white;
+}
+
+h1 {
+  color: #752424;
+  text-align: center;
+  padding-top: 20px;
+}
