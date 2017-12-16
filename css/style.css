@@ -5,13 +5,34 @@ body, html {
 header {
   height: 100px;
   width: auto;
-  background-color: silver;
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #000;
 }
 
 h1 {
-  color: #752424;
+  color: silver;
   text-align: center;
   padding-top: 20px;
+  font-size: 50px;
+  text-shadow: 2px 2px #103b89;
+}
+
+input {
+    border: 1px solid #C0C0C0;
+    padding: 5px 5px;
+    font-size: 15px;
+    color: #000;
+}
+
+button {
+  border: 1px solid #000;
+  background-color: #e6e6e6;
+  padding: 5px 5px;
+  font-size: 15px;
+}
+
+.nav {
+  padding: 10px 0 10px 0;
 }
 
 #salaryTable {
@@ -43,21 +64,13 @@ h1 {
 #dataInput {
   padding: 10px 10px;
   width: 80%;
+
 }
 
-input {
-    border: 1px solid #C0C0C0;
-    padding: 5px 5px;
-    font-size: 15px;
-    color: #000;
-}
-
-button {
-  border: 1px solid #C0C0C0;
-  padding: 5px 5px;
-  font-size: 15px;
+#main {
+  border: 1px solid #000;
 }
 
 #deleteRow {
-  margin-top: 10px;
+  margin: 10px 5px;
 }

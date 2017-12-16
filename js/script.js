@@ -3,13 +3,14 @@ $(document).ready(function() {
 
   // event handlers
 
-
   $(".addButton").click(function() {
     if ($("#firstname").val().length > 0) {
       var first = $("#firstname").val();
       var last = $("#lastname").val();
       var job = $("#jobtitle").val();
       var annual = $("#annualsalary").val();
+      var monthly = annual/12;
+      console.log(monthly);
       var data = "<tr><td><input type='checkbox' name='chkRemove'></td><td>"
       + first +
       "</td><td>"
@@ -18,6 +19,8 @@ $(document).ready(function() {
       + job +
       "</td><td>"
       + annual +
+      "</td><td>"
+      + monthly +
       "</td></tr>";
 
       $("table tbody").append(data);
