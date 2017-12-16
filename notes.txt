@@ -1,0 +1,56 @@
+//event listener
+$(".btnSubmit").on('click', appendData);
+$(".deleteRow").on('click', removeRow);
+
+
+//append data to DOM
+var $row = $('<tr>');
+
+$row.append('<td>' + first + '</td>');
+$row.append('<td>' + last + '</td>');
+$row.append('<td>' + job + '</td>');
+$row.append('<td>' + annual + '</td>');
+$row.append(',td><button id=btnSubmit></button></td>')
+$('#salaryBody').append($row);
+
+function appendData() {
+  console.log('submit clicked');
+  var first = $("#firstName").val();
+  var last = $("#lastName").val();
+  var job = $("#jobtitle").val();
+  var annual = $("#annualsalary").val();
+  var markup = "<tr><td><input type='checkbox' name='remove'></td><td>" + first + "</td><td>" + last + "</td><td>" + job + "</td><td>" + annual + "</td></tr>";
+  $("table tbody").append(markup);
+};
+
+// find/remove selected rows
+function removeRow() {
+  console.log('delete clicked');
+  $("table tbody").find('#deleteRow').each(function() {
+    if ($(this).is(":checked")) {
+      $(this).parents("tr").remove();
+    }
+  });
+};
+});
+// create submit button
+
+//auto increment ID #
+
+// create function to to store the information to calculate monthly costs
+
+// append information to DOM(table)
+
+//clear input fields
+
+//use stored data to calculate monthly costs
+
+//append to the DOM(table)
+
+// *********HARD mode***************
+
+// create delete button
+
+// use delete button to remove an employee from DOM
+
+//style page

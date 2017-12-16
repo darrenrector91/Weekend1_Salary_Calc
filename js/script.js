@@ -1,30 +1,21 @@
-$(document).ready(salaryCalculator);
+$(document).ready(function() {
+  console.log('DOM loaded');
 
-function salaryCalculator() {
-  //event listener
+  $(".addButton").click(function() {
+    var first = $("#firstname").val();
+    var last = $("#lastname").val();
+    var job = $("#jobtitle").val();
+    var annual = $("#annualsalary").val();
+    var data = "<tr><td><input type='checkbox' name='chkRemove'></td><td>" + first + "</td><td>" + last + "</td><td>" + job + "</td><td>" + annual + "</td></tr>";
+    $("table tbody").append(data);
+  });
 
+  // Find and remove selected table rows
+  $("#deleteRow").click(function() {
+    $("table tbody").find('input[name="chkRemove"]').each(function() {
+      if ($(this).is(":checked")) {
+        $(this).parents("tr").remove();
+      }
+    });
+  });
 });
-
-// create input form(table) including:
-//_employee first name, last name,
-// ID number, job title, annual salary_
-
-// create submit button
-
-// create function to to store the information to calculate monthly costs
-
-// append information to DOM(table)
-
-//clear input fields
-
-//use stored data to calculate monthly costs
-
-//append to the DOM(table)
-
-// *********HARD mode***************
-
-// create delete button
-
-// use delete button to remove an employee from DOM
-
-//style page

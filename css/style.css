@@ -6,7 +6,12 @@ header {
   height: 100px;
   width: auto;
   background-color: silver;
+}
 
+h1 {
+  color: #752424;
+  text-align: center;
+  padding-top: 20px;
 }
 
 #salaryTable {
@@ -23,20 +28,36 @@ header {
   background-color: #f2f2f2;
 }
 
-/* #salaryTable tr:hover {
+#salaryTable tr:hover {
   background-color: #ddd;
-} */
+}
 
 #salaryTable th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: #33ACFF;
+  background-color: #103b89;
   color: white;
 }
 
-h1 {
-  color: #752424;
-  text-align: center;
-  padding-top: 20px;
+#dataInput {
+  padding: 10px 10px;
+  width: 80%;
+}
+
+input {
+    border: 1px solid #C0C0C0;
+    padding: 5px 5px;
+    font-size: 15px;
+    color: #000;
+}
+
+button {
+  border: 1px solid #C0C0C0;
+  padding: 5px 5px;
+  font-size: 15px;
+}
+
+#deleteRow {
+  margin-top: 10px;
 }
