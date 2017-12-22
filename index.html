@@ -19,13 +19,11 @@
     </header>
     <nav class="nav">
       <div id="dataInput">
-
+        <input id="id" type="text" placeholder="ID">
         <input id="firstname" type="text" placeholder="First name">
         <input id="lastname" type="text" placeholder="Last name">
         <input id="jobtitle" type="text" placeholder="Job title">
         <input id="annualsalary" type="text" placeholder="Annual salary">
-        <!-- <input type="text" id="monthly" type="text"
-        placeholder="Monthly salary"> -->
         <button type="button" id="btnSubmit" class="addButton">Submit</button>
       </div>
     </nav>
@@ -42,6 +40,7 @@
             <th>Job title</th>
             <th>Annual salary</th>
             <th>Monthly salary</th>
+            <th>Delete</th>
           </tr>
         </thead>
         <tbody id="salaryBody">
@@ -49,10 +48,11 @@
           </tr>
         </tbody>
       </table>
-      <button type="button" id="deleteRow" class="button">Delete Row</button>
     </main>
+    <input type="text" id="annualExpense" placeholder="Annual Expense">
     <footer class="footer"></footer>
   </container>
 </body>
 
 </html>
+<!-- <button type="button" id="deleteRow" class="button">Delete Row</button> -->

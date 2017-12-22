@@ -21,6 +21,16 @@ input {
     border: 1px solid #C0C0C0;
     padding: 5px 5px;
     font-size: 15px;
+    width: 100px;
+    margin-right: 5px;
+    color: #000;
+}
+
+input#id{
+    border: 1px solid #C0C0C0;
+    padding: 5px 5px;
+    width: 50px;
+    font-size: 15px;
     color: #000;
 }
 
@@ -33,6 +43,9 @@ button {
 
 .nav {
   padding: 10px 0 10px 0;
+}
+nav.nav {
+  padding-left: 275px;
 }
 
 #salaryTable {
@@ -49,9 +62,9 @@ button {
   background-color: #f2f2f2;
 }
 
-#salaryTable tr:hover {
+/* #salaryTable tr:hover {
   background-color: #ddd;
-}
+} */
 
 #salaryTable th {
   padding-top: 12px;
@@ -73,4 +86,9 @@ button {
 
 #deleteRow {
   margin: 10px 5px;
+}
+
+#annualExpense {
+  width: 200px;
+  margin-top: 10px;
 }
